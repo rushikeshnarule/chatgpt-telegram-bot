@@ -31,7 +31,7 @@ def main():
     functions_available = are_functions_available(model=model)
     max_tokens_default = default_max_tokens(model=model)
     openai_config = {
-        'api_key': os.environ['OPENAI_API_KEY'],
+        'api_key': os.environ['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'],
         'show_usage': os.environ.get('SHOW_USAGE', 'false').lower() == 'true',
         'stream': os.environ.get('STREAM', 'true').lower() == 'true',
         'proxy': os.environ.get('PROXY', None),
@@ -64,9 +64,9 @@ def main():
                         'Please use GUEST_BUDGET with BUDGET_PERIOD instead.')
 
     telegram_config = {
-        'token': os.environ['TELEGRAM_BOT_TOKEN'],
-        'admin_user_ids': os.environ.get('ADMIN_USER_IDS', '-'),
-        'allowed_user_ids': os.environ.get('ALLOWED_TELEGRAM_USER_IDS', '*'),
+        'token': os.environ['5210803395:AAH-v1FQmr_GQ8-et8WvLlc3jLZgPB3zj_g'],
+        'admin_user_ids': os.environ.get('ADMIN_USER_IDS', '1856483841'),
+        'allowed_user_ids': os.environ.get('ALLOWED_TELEGRAM_USER_IDS', '1856483841'),
         'enable_quoting': os.environ.get('ENABLE_QUOTING', 'true').lower() == 'true',
         'enable_image_generation': os.environ.get('ENABLE_IMAGE_GENERATION', 'true').lower() == 'true',
         'enable_transcription': os.environ.get('ENABLE_TRANSCRIPTION', 'true').lower() == 'true',
